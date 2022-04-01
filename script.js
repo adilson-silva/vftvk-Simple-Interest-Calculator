@@ -15,7 +15,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 
     // Calcule total amount
-    var total = parseFloat(interest+principal).toFixed(2);
+    var total = parseFloat(+principal+interest).toFixed(2);
 
     // Show results
     document.getElementById("result").innerHTML =
