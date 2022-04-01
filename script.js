@@ -14,14 +14,11 @@ function compute()
 
     var year = new Date().getFullYear()+parseInt(years);
 
-    // Calcule total amount
-    var total = parseFloat(+principal+interest).toFixed(2);
-
     // Show results
     document.getElementById("result").innerHTML =
         "If you deposit \<mark\>" + principal + "\</mark\>,\<br\>" +
         "at an interest rate of \<mark\>" + rate + "%\</mark\>.\<br\>" +
-        "You will receive an amount of \<mark\>" + total + "\</mark\>,\<br\>" +
+        "You will receive an amount of \<mark\>" + parseFloat(+interest).toFixed(2) + "\</mark\>,\<br\>" +
         "in the year <mark>" + year + "\</mark\>\<br\>"
     return false;
 }
